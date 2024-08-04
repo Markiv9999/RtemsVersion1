@@ -1,4 +1,4 @@
-# project  configured on Sun Aug  4 07:39:30 2024 by
+# project  configured on Sun Aug  4 07:44:01 2024 by
 # waf 2.0.19 (abi 20, python 30c04f0 on linux)
 # using ./waf configure --rtems=/home/vboxuser/quick-start/rtems-tool-suite/6.1-rc3 --rtems-bsp=arm/stm32l4
 #
