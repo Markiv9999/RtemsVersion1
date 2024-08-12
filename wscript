@@ -25,11 +25,34 @@ def options(opt):
 def configure(conf):
     rtems.configure(conf, bsp_configure = bsp_configure)
 
+    
+
+
 def build(bld):
     rtems.build(bld)
+    
+    # Specify the path to HAL source and header files
+    hal_source_dir = './Drivers/STM32L4xx_HAL_Driver/Src'
+    hal_include_dir = './Drivers/STM32L4xx_HAL_Driver/Inc'
+    cmsis_include_dir = './Drivers/CMSIS/Include'
 
-    bld(features = 'c cprogram',
+    # Collect all HAL source files from the source directory
+    hal_sources = [
+        'stm32l4xx_hal_uart.c',
+        'stm32l4xx_hal_uart_ex.c',
+        # Add more HAL source files as needed
+    ]
+
+    # Generate the full path for HAL source files
+    hal_source_files = [f'{hal_source_dir}/{src}' for src in hal_sources]
+
+    bld(features = 'c cxx cprogram',
         target = 'hello.elf',
-        cflags = '-g -O2',
-        source = ['hello.c',
-                  'init.c'])
+        cflags = '-g -O0 -mthumb -mfloat-abi=hard -fstack-usage',
+        source = ['hello.cpp',
+                  'init.c',
+                  'BoardInit.cpp',
+                  'UartConsole.cpp'
+                  ] + hal_source_files,
+        includes=[hal_include_dir, cmsis_include_dir],
+		linkflags=['-lstdc++'])
