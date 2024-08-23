@@ -13,13 +13,11 @@ except:
     sys.exit(1)
 
 def init(ctx):
-
     rtems.init(ctx, version = rtems_version, long_commands = True)
 
 def bsp_configure(conf, arch_bsp):
     # Add BSP specific configuration checks
     pass
-
 
 def options(opt):
     rtems.options(opt)
@@ -30,12 +28,13 @@ def configure(conf):
 def build(bld):
     rtems.build(bld)
 
-    bld(features = 'c cprogram',
-        target = 'camera_firmware.elf',
+    bld(features = 'c cxx cprogram',
+        target = 'hello.exe',
         cflags = '-g -O0 -mthumb -mfloat-abi=hard -fstack-usage',
-        source = ['main.c',
-                  'frame_handler.c',
-                  'test_nand_routines.c',
-                  'test_image_storage_routines.c',
-                  'frame_retrieve.c',
-                  'init.c'])
+        cxxflags= '-g',
+        source = ['hello.cpp',
+                  'init.c',
+'BoardInit.cpp',
+'UartConsole.cpp'
+                  ]
+        )

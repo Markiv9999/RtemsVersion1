@@ -1,0 +1,5 @@
+When Running in c++ mode, bspstarthook0 and bspstarthook1 are running in a loop.
+
+1. Check when running in C mode.
+
+2. Check the other bsps for implementation of hooks.
