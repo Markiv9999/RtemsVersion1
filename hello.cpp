@@ -34,8 +34,8 @@ extern "C" rtems_task Init(
   BoardInit();
   UartConsole con1;
   con1.Init();
-  con1.print("Hello World");
-  printf( "\nHello World\n" );
+  con1.print("\nHello World from UARTConsole\n");
+  printf( "\nHello World from RTEMSConsole\n" );
   exit( 0 );
 }
 

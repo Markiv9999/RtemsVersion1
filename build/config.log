@@ -1,13 +1,13 @@
-# project  configured on Fri Aug 23 11:00:30 2024 by
+# project  configured on Sat Aug 24 08:44:03 2024 by
 # waf 2.0.19 (abi 20, python 30c03f0 on linux)
 # using ./waf configure --rtems=/home/vboxuser/quick-start/rtems/6 --rtems-bsp=arm/stm32l4
 #
 ----------------------------------------
 Setting top to
-/home/vboxuser/quick-start/app/hello
+/home/vboxuser/quick-start/app/RtemsVersion1
 ----------------------------------------
 Setting out to
-/home/vboxuser/quick-start/app/hello/build
+/home/vboxuser/quick-start/app/RtemsVersion1/build
 -----------------------------------------
 ----------------------------------------
 RTEMS Version
@@ -933,7 +933,7 @@ int main() { return 0; }
 <==
 [1/1] Compiling [32mbuild/.conf_check_509462851c9724c0a8dfb70e8a94563b/test.c[0m
 
-['/home/vboxuser/quick-start/rtems/6/bin/arm-rtems6-gcc', '-MMD', '../test.c', '-c', '-o/home/vboxuser/quick-start/app/hello/build/.conf_check_509462851c9724c0a8dfb70e8a94563b/testbuild/test.c.1.o']
+['/home/vboxuser/quick-start/rtems/6/bin/arm-rtems6-gcc', '-MMD', '../test.c', '-c', '-o/home/vboxuser/quick-start/app/RtemsVersion1/build/.conf_check_509462851c9724c0a8dfb70e8a94563b/testbuild/test.c.1.o']
 yes
 -----------------------------------------
 Checking for cxx flags '-MMD'
@@ -942,7 +942,7 @@ int main() { return 0; }
 <==
 [1/1] Compiling [32mbuild/.conf_check_a483f89cb2b8760c1662d80180dd6fd4/test.cpp[0m
 
-['/home/vboxuser/quick-start/rtems/6/bin/arm-rtems6-g++', '-MMD', '../test.cpp', '-c', '-o/home/vboxuser/quick-start/app/hello/build/.conf_check_a483f89cb2b8760c1662d80180dd6fd4/testbuild/test.cpp.1.o']
+['/home/vboxuser/quick-start/rtems/6/bin/arm-rtems6-g++', '-MMD', '../test.cpp', '-c', '-o/home/vboxuser/quick-start/app/RtemsVersion1/build/.conf_check_a483f89cb2b8760c1662d80180dd6fd4/testbuild/test.cpp.1.o']
 yes
 ['/home/vboxuser/quick-start/rtems/6/bin/arm-rtems6-gcc', '--version']
 out: arm-rtems6-gcc (GCC) 13.3.0 20240521 (RTEMS 6, RSB 585d8ba43f8d207cfc961a5d8eb7387c750ba407, Newlib 1339af4)
@@ -976,10 +976,10 @@ void Init(rtems_task_argument arg) { (void)arg; }
 <==
 [1/2] Compiling [32mbuild/.conf_check_261484d99ea5da27480d47dee9a30c04/test.c[0m
 
-['/home/vboxuser/quick-start/rtems/6/bin/arm-rtems6-gcc', '-mcpu=cortex-m4', '-mthumb', '-mfloat-abi=hard', '-mfpu=auto', '-isystem/home/vboxuser/quick-start/rtems/6/arm-rtems6/stm32l4/lib/include', '-MMD', '../test.c', '-c', '-o/home/vboxuser/quick-start/app/hello/build/.conf_check_261484d99ea5da27480d47dee9a30c04/testbuild/test.c.1.o']
+['/home/vboxuser/quick-start/rtems/6/bin/arm-rtems6-gcc', '-mcpu=cortex-m4', '-mthumb', '-mfloat-abi=hard', '-mfpu=auto', '-isystem/home/vboxuser/quick-start/rtems/6/arm-rtems6/stm32l4/lib/include', '-MMD', '../test.c', '-c', '-o/home/vboxuser/quick-start/app/RtemsVersion1/build/.conf_check_261484d99ea5da27480d47dee9a30c04/testbuild/test.c.1.o']
 [2/2] Linking [33mbuild/.conf_check_261484d99ea5da27480d47dee9a30c04/testbuild/testprog[0m
 
-['/home/vboxuser/quick-start/rtems/6/bin/arm-rtems6-gcc', '-mcpu=cortex-m4', '-mthumb', '-mfloat-abi=hard', '-mfpu=auto', '-isystem/home/vboxuser/quick-start/rtems/6/arm-rtems6/stm32l4/lib/include', '-MMD', '-B/home/vboxuser/quick-start/rtems/6/arm-rtems6/stm32l4/lib', '-qrtems', '-Wl,--gc-sections', 'test.c.1.o', '-o/home/vboxuser/quick-start/app/hello/build/.conf_check_261484d99ea5da27480d47dee9a30c04/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/home/vboxuser/quick-start/rtems/6/bin/arm-rtems6-gcc', '-mcpu=cortex-m4', '-mthumb', '-mfloat-abi=hard', '-mfpu=auto', '-isystem/home/vboxuser/quick-start/rtems/6/arm-rtems6/stm32l4/lib/include', '-MMD', '-B/home/vboxuser/quick-start/rtems/6/arm-rtems6/stm32l4/lib', '-qrtems', '-Wl,--gc-sections', 'test.c.1.o', '-o/home/vboxuser/quick-start/app/RtemsVersion1/build/.conf_check_261484d99ea5da27480d47dee9a30c04/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 -------------------------------------------
 Checking for RTEMS_DEBUG
@@ -1002,7 +1002,7 @@ void Init(rtems_task_argument arg) { (void)arg; }
 <==
 [1/2] Compiling [32mbuild/.conf_check_d1138cde491707077f06f6a5aee1cc95/test.c[0m
 
-['/home/vboxuser/quick-start/rtems/6/bin/arm-rtems6-gcc', '-mcpu=cortex-m4', '-mthumb', '-mfloat-abi=hard', '-mfpu=auto', '-isystem/home/vboxuser/quick-start/rtems/6/arm-rtems6/stm32l4/lib/include', '-MMD', '../test.c', '-c', '-o/home/vboxuser/quick-start/app/hello/build/.conf_check_d1138cde491707077f06f6a5aee1cc95/testbuild/test.c.1.o']
+['/home/vboxuser/quick-start/rtems/6/bin/arm-rtems6-gcc', '-mcpu=cortex-m4', '-mthumb', '-mfloat-abi=hard', '-mfpu=auto', '-isystem/home/vboxuser/quick-start/rtems/6/arm-rtems6/stm32l4/lib/include', '-MMD', '../test.c', '-c', '-o/home/vboxuser/quick-start/app/RtemsVersion1/build/.conf_check_d1138cde491707077f06f6a5aee1cc95/testbuild/test.c.1.o']
 err: ../test.c:3:4: error: #error RTEMS_DEBUG is not defined
     3 |   #error RTEMS_DEBUG is not defined
       |    ^~~~~
@@ -1010,16 +1010,16 @@ err: ../test.c:3:4: error: #error RTEMS_DEBUG is not defined
     8 |   #error RTEMS_DEBUG is false
       |    ^~~~~
 
-from /home/vboxuser/quick-start/app/hello: Test does not build: Traceback (most recent call last):
-  File "/home/vboxuser/quick-start/app/hello/.waf3-2.0.19-1f3c580272b15a03d2566843c5fe872a/waflib/Configure.py", line 333, in run_build
+from /home/vboxuser/quick-start/app/RtemsVersion1: Test does not build: Traceback (most recent call last):
+  File "/home/vboxuser/quick-start/app/RtemsVersion1/.waf3-2.0.19-1f3c580272b15a03d2566843c5fe872a/waflib/Configure.py", line 333, in run_build
     bld.compile()
-  File "/home/vboxuser/quick-start/app/hello/.waf3-2.0.19-1f3c580272b15a03d2566843c5fe872a/waflib/Build.py", line 176, in compile
+  File "/home/vboxuser/quick-start/app/RtemsVersion1/.waf3-2.0.19-1f3c580272b15a03d2566843c5fe872a/waflib/Build.py", line 176, in compile
     raise Errors.BuildError(self.producer.error)
 waflib.Errors.BuildError: Build failed
  -> task in 'testprog' failed with exit status 1 (run with -v to display more information)
 
 no
-from /home/vboxuser/quick-start/app/hello: The configuration failed
+from /home/vboxuser/quick-start/app/RtemsVersion1: The configuration failed
 -------------------------------------------
 Checking for RTEMS_MULTIPROCESSING
 ==>
@@ -1041,7 +1041,7 @@ void Init(rtems_task_argument arg) { (void)arg; }
 <==
 [1/2] Compiling [32mbuild/.conf_check_e7c1b86201b201f3c15da2c2f5bb58bc/test.c[0m
 
-['/home/vboxuser/quick-start/rtems/6/bin/arm-rtems6-gcc', '-mcpu=cortex-m4', '-mthumb', '-mfloat-abi=hard', '-mfpu=auto', '-isystem/home/vboxuser/quick-start/rtems/6/arm-rtems6/stm32l4/lib/include', '-MMD', '../test.c', '-c', '-o/home/vboxuser/quick-start/app/hello/build/.conf_check_e7c1b86201b201f3c15da2c2f5bb58bc/testbuild/test.c.1.o']
+['/home/vboxuser/quick-start/rtems/6/bin/arm-rtems6-gcc', '-mcpu=cortex-m4', '-mthumb', '-mfloat-abi=hard', '-mfpu=auto', '-isystem/home/vboxuser/quick-start/rtems/6/arm-rtems6/stm32l4/lib/include', '-MMD', '../test.c', '-c', '-o/home/vboxuser/quick-start/app/RtemsVersion1/build/.conf_check_e7c1b86201b201f3c15da2c2f5bb58bc/testbuild/test.c.1.o']
 err: ../test.c:3:4: error: #error RTEMS_MULTIPROCESSING is not defined
     3 |   #error RTEMS_MULTIPROCESSING is not defined
       |    ^~~~~
@@ -1049,16 +1049,16 @@ err: ../test.c:3:4: error: #error RTEMS_MULTIPROCESSING is not defined
     8 |   #error RTEMS_MULTIPROCESSING is false
       |    ^~~~~
 
-from /home/vboxuser/quick-start/app/hello: Test does not build: Traceback (most recent call last):
-  File "/home/vboxuser/quick-start/app/hello/.waf3-2.0.19-1f3c580272b15a03d2566843c5fe872a/waflib/Configure.py", line 333, in run_build
+from /home/vboxuser/quick-start/app/RtemsVersion1: Test does not build: Traceback (most recent call last):
+  File "/home/vboxuser/quick-start/app/RtemsVersion1/.waf3-2.0.19-1f3c580272b15a03d2566843c5fe872a/waflib/Configure.py", line 333, in run_build
     bld.compile()
-  File "/home/vboxuser/quick-start/app/hello/.waf3-2.0.19-1f3c580272b15a03d2566843c5fe872a/waflib/Build.py", line 176, in compile
+  File "/home/vboxuser/quick-start/app/RtemsVersion1/.waf3-2.0.19-1f3c580272b15a03d2566843c5fe872a/waflib/Build.py", line 176, in compile
     raise Errors.BuildError(self.producer.error)
 waflib.Errors.BuildError: Build failed
  -> task in 'testprog' failed with exit status 1 (run with -v to display more information)
 
 no
-from /home/vboxuser/quick-start/app/hello: The configuration failed
+from /home/vboxuser/quick-start/app/RtemsVersion1: The configuration failed
 -------------------------------------------
 Checking for RTEMS_NEWLIB
 ==>
@@ -1080,10 +1080,10 @@ void Init(rtems_task_argument arg) { (void)arg; }
 <==
 [1/2] Compiling [32mbuild/.conf_check_41cb4e050210a61cff716d2adb997862/test.c[0m
 
-['/home/vboxuser/quick-start/rtems/6/bin/arm-rtems6-gcc', '-mcpu=cortex-m4', '-mthumb', '-mfloat-abi=hard', '-mfpu=auto', '-isystem/home/vboxuser/quick-start/rtems/6/arm-rtems6/stm32l4/lib/include', '-MMD', '../test.c', '-c', '-o/home/vboxuser/quick-start/app/hello/build/.conf_check_41cb4e050210a61cff716d2adb997862/testbuild/test.c.1.o']
+['/home/vboxuser/quick-start/rtems/6/bin/arm-rtems6-gcc', '-mcpu=cortex-m4', '-mthumb', '-mfloat-abi=hard', '-mfpu=auto', '-isystem/home/vboxuser/quick-start/rtems/6/arm-rtems6/stm32l4/lib/include', '-MMD', '../test.c', '-c', '-o/home/vboxuser/quick-start/app/RtemsVersion1/build/.conf_check_41cb4e050210a61cff716d2adb997862/testbuild/test.c.1.o']
 [2/2] Linking [33mbuild/.conf_check_41cb4e050210a61cff716d2adb997862/testbuild/testprog[0m
 
-['/home/vboxuser/quick-start/rtems/6/bin/arm-rtems6-gcc', '-mcpu=cortex-m4', '-mthumb', '-mfloat-abi=hard', '-mfpu=auto', '-isystem/home/vboxuser/quick-start/rtems/6/arm-rtems6/stm32l4/lib/include', '-MMD', '-B/home/vboxuser/quick-start/rtems/6/arm-rtems6/stm32l4/lib', '-qrtems', '-Wl,--gc-sections', 'test.c.1.o', '-o/home/vboxuser/quick-start/app/hello/build/.conf_check_41cb4e050210a61cff716d2adb997862/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/home/vboxuser/quick-start/rtems/6/bin/arm-rtems6-gcc', '-mcpu=cortex-m4', '-mthumb', '-mfloat-abi=hard', '-mfpu=auto', '-isystem/home/vboxuser/quick-start/rtems/6/arm-rtems6/stm32l4/lib/include', '-MMD', '-B/home/vboxuser/quick-start/rtems/6/arm-rtems6/stm32l4/lib', '-qrtems', '-Wl,--gc-sections', 'test.c.1.o', '-o/home/vboxuser/quick-start/app/RtemsVersion1/build/.conf_check_41cb4e050210a61cff716d2adb997862/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 -------------------------------------------
 Checking for RTEMS_POSIX_API
@@ -1106,7 +1106,7 @@ void Init(rtems_task_argument arg) { (void)arg; }
 <==
 [1/2] Compiling [32mbuild/.conf_check_1ca9fc3cbc4f7470b61b140f4bbf5710/test.c[0m
 
-['/home/vboxuser/quick-start/rtems/6/bin/arm-rtems6-gcc', '-mcpu=cortex-m4', '-mthumb', '-mfloat-abi=hard', '-mfpu=auto', '-isystem/home/vboxuser/quick-start/rtems/6/arm-rtems6/stm32l4/lib/include', '-MMD', '../test.c', '-c', '-o/home/vboxuser/quick-start/app/hello/build/.conf_check_1ca9fc3cbc4f7470b61b140f4bbf5710/testbuild/test.c.1.o']
+['/home/vboxuser/quick-start/rtems/6/bin/arm-rtems6-gcc', '-mcpu=cortex-m4', '-mthumb', '-mfloat-abi=hard', '-mfpu=auto', '-isystem/home/vboxuser/quick-start/rtems/6/arm-rtems6/stm32l4/lib/include', '-MMD', '../test.c', '-c', '-o/home/vboxuser/quick-start/app/RtemsVersion1/build/.conf_check_1ca9fc3cbc4f7470b61b140f4bbf5710/testbuild/test.c.1.o']
 err: ../test.c:3:4: error: #error RTEMS_POSIX_API is not defined
     3 |   #error RTEMS_POSIX_API is not defined
       |    ^~~~~
@@ -1114,16 +1114,16 @@ err: ../test.c:3:4: error: #error RTEMS_POSIX_API is not defined
     8 |   #error RTEMS_POSIX_API is false
       |    ^~~~~
 
-from /home/vboxuser/quick-start/app/hello: Test does not build: Traceback (most recent call last):
-  File "/home/vboxuser/quick-start/app/hello/.waf3-2.0.19-1f3c580272b15a03d2566843c5fe872a/waflib/Configure.py", line 333, in run_build
+from /home/vboxuser/quick-start/app/RtemsVersion1: Test does not build: Traceback (most recent call last):
+  File "/home/vboxuser/quick-start/app/RtemsVersion1/.waf3-2.0.19-1f3c580272b15a03d2566843c5fe872a/waflib/Configure.py", line 333, in run_build
     bld.compile()
-  File "/home/vboxuser/quick-start/app/hello/.waf3-2.0.19-1f3c580272b15a03d2566843c5fe872a/waflib/Build.py", line 176, in compile
+  File "/home/vboxuser/quick-start/app/RtemsVersion1/.waf3-2.0.19-1f3c580272b15a03d2566843c5fe872a/waflib/Build.py", line 176, in compile
     raise Errors.BuildError(self.producer.error)
 waflib.Errors.BuildError: Build failed
  -> task in 'testprog' failed with exit status 1 (run with -v to display more information)
 
 no
-from /home/vboxuser/quick-start/app/hello: The configuration failed
+from /home/vboxuser/quick-start/app/RtemsVersion1: The configuration failed
 -------------------------------------------
 Checking for RTEMS_SMP
 ==>
@@ -1145,7 +1145,7 @@ void Init(rtems_task_argument arg) { (void)arg; }
 <==
 [1/2] Compiling [32mbuild/.conf_check_cacc7aa2df0ad628cae5585ef9e6e1ef/test.c[0m
 
-['/home/vboxuser/quick-start/rtems/6/bin/arm-rtems6-gcc', '-mcpu=cortex-m4', '-mthumb', '-mfloat-abi=hard', '-mfpu=auto', '-isystem/home/vboxuser/quick-start/rtems/6/arm-rtems6/stm32l4/lib/include', '-MMD', '../test.c', '-c', '-o/home/vboxuser/quick-start/app/hello/build/.conf_check_cacc7aa2df0ad628cae5585ef9e6e1ef/testbuild/test.c.1.o']
+['/home/vboxuser/quick-start/rtems/6/bin/arm-rtems6-gcc', '-mcpu=cortex-m4', '-mthumb', '-mfloat-abi=hard', '-mfpu=auto', '-isystem/home/vboxuser/quick-start/rtems/6/arm-rtems6/stm32l4/lib/include', '-MMD', '../test.c', '-c', '-o/home/vboxuser/quick-start/app/RtemsVersion1/build/.conf_check_cacc7aa2df0ad628cae5585ef9e6e1ef/testbuild/test.c.1.o']
 err: ../test.c:3:4: error: #error RTEMS_SMP is not defined
     3 |   #error RTEMS_SMP is not defined
       |    ^~~~~
@@ -1153,16 +1153,16 @@ err: ../test.c:3:4: error: #error RTEMS_SMP is not defined
     8 |   #error RTEMS_SMP is false
       |    ^~~~~
 
-from /home/vboxuser/quick-start/app/hello: Test does not build: Traceback (most recent call last):
-  File "/home/vboxuser/quick-start/app/hello/.waf3-2.0.19-1f3c580272b15a03d2566843c5fe872a/waflib/Configure.py", line 333, in run_build
+from /home/vboxuser/quick-start/app/RtemsVersion1: Test does not build: Traceback (most recent call last):
+  File "/home/vboxuser/quick-start/app/RtemsVersion1/.waf3-2.0.19-1f3c580272b15a03d2566843c5fe872a/waflib/Configure.py", line 333, in run_build
     bld.compile()
-  File "/home/vboxuser/quick-start/app/hello/.waf3-2.0.19-1f3c580272b15a03d2566843c5fe872a/waflib/Build.py", line 176, in compile
+  File "/home/vboxuser/quick-start/app/RtemsVersion1/.waf3-2.0.19-1f3c580272b15a03d2566843c5fe872a/waflib/Build.py", line 176, in compile
     raise Errors.BuildError(self.producer.error)
 waflib.Errors.BuildError: Build failed
  -> task in 'testprog' failed with exit status 1 (run with -v to display more information)
 
 no
-from /home/vboxuser/quick-start/app/hello: The configuration failed
+from /home/vboxuser/quick-start/app/RtemsVersion1: The configuration failed
 -------------------------------------------
 Checking for RTEMS_NETWORKING
 ==>
@@ -1184,7 +1184,7 @@ void Init(rtems_task_argument arg) { (void)arg; }
 <==
 [1/2] Compiling [32mbuild/.conf_check_25873bbb9770e7b69177cf36166475ce/test.c[0m
 
-['/home/vboxuser/quick-start/rtems/6/bin/arm-rtems6-gcc', '-mcpu=cortex-m4', '-mthumb', '-mfloat-abi=hard', '-mfpu=auto', '-isystem/home/vboxuser/quick-start/rtems/6/arm-rtems6/stm32l4/lib/include', '-MMD', '../test.c', '-c', '-o/home/vboxuser/quick-start/app/hello/build/.conf_check_25873bbb9770e7b69177cf36166475ce/testbuild/test.c.1.o']
+['/home/vboxuser/quick-start/rtems/6/bin/arm-rtems6-gcc', '-mcpu=cortex-m4', '-mthumb', '-mfloat-abi=hard', '-mfpu=auto', '-isystem/home/vboxuser/quick-start/rtems/6/arm-rtems6/stm32l4/lib/include', '-MMD', '../test.c', '-c', '-o/home/vboxuser/quick-start/app/RtemsVersion1/build/.conf_check_25873bbb9770e7b69177cf36166475ce/testbuild/test.c.1.o']
 err: ../test.c:3:4: error: #error RTEMS_NETWORKING is not defined
     3 |   #error RTEMS_NETWORKING is not defined
       |    ^~~~~
@@ -1192,13 +1192,13 @@ err: ../test.c:3:4: error: #error RTEMS_NETWORKING is not defined
     8 |   #error RTEMS_NETWORKING is false
       |    ^~~~~
 
-from /home/vboxuser/quick-start/app/hello: Test does not build: Traceback (most recent call last):
-  File "/home/vboxuser/quick-start/app/hello/.waf3-2.0.19-1f3c580272b15a03d2566843c5fe872a/waflib/Configure.py", line 333, in run_build
+from /home/vboxuser/quick-start/app/RtemsVersion1: Test does not build: Traceback (most recent call last):
+  File "/home/vboxuser/quick-start/app/RtemsVersion1/.waf3-2.0.19-1f3c580272b15a03d2566843c5fe872a/waflib/Configure.py", line 333, in run_build
     bld.compile()
-  File "/home/vboxuser/quick-start/app/hello/.waf3-2.0.19-1f3c580272b15a03d2566843c5fe872a/waflib/Build.py", line 176, in compile
+  File "/home/vboxuser/quick-start/app/RtemsVersion1/.waf3-2.0.19-1f3c580272b15a03d2566843c5fe872a/waflib/Build.py", line 176, in compile
     raise Errors.BuildError(self.producer.error)
 waflib.Errors.BuildError: Build failed
  -> task in 'testprog' failed with exit status 1 (run with -v to display more information)
 
 no
-from /home/vboxuser/quick-start/app/hello: The configuration failed
+from /home/vboxuser/quick-start/app/RtemsVersion1: The configuration failed
